@@ -1,17 +1,163 @@
+
 <!doctype html>
-<html>
-
+<html dir="ltr" lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-    <title >banana</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+<meta charset="utf-8">
+<title>New Tab</title>
+<link rel="stylesheet" href="chrome://resources/css/text_defaults.css">
+<style>/* Copyright 2014 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ *
+ * Incognito and guest mode NTP shared CSS. */
+
+ body {
+  -webkit-font-smoothing: antialiased;
+  font-size: 85%;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background: rgb(53, 54, 58);
+    color: rgb(232, 234, 237);  /* --google-grey-200 */
+  }
+}
+
+h1 {
+  font-size: 200%;
+  font-weight: 400;
+  margin-bottom: .77em;
+}
+
+p {
+  line-height: 1.5;
+  margin: .588em 0;
+  text-align: start;
+}
+
+a {
+  color: rgb(51, 103, 214);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.learn-more-button {
+  color: rgb(66, 133, 244);
+  display: inline-block;
+  font-size: 92.8%;
+  font-weight: 500;
+  margin-top: 1.98em;
+  padding: 10.5px 12px;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :-webkit-any(a, .learn-more-button) {
+    color: rgb(138, 180, 248);  /* --google-blue-300 */
+  }
+}
+
+.content {
+  box-sizing: border-box;
+  margin: 3.5em auto 0;
+  max-width: 480px;
+  min-width: 240px;
+  padding: 30px 35px;
+  text-align: center;
+}
+
+html[hascustombackground='true'] .content {
+  border-radius: 2px;
+  box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.4);
+}
+
+.content > span {
+  display: block;
+}
+
+@media (max-width:700px) {
+  body {
+    margin: 1em 2em 2em;
+  }
+}
+
+@media (max-width:400px) {
+  body {
+    margin: 3em 1.5em 2em;
+  }
+
+  /* Adjustment for narrow screen to prevent horizontal scrollbar. */
+  .content {
+    padding: 16px 8px;
+  }
+}
+
+@media (max-height:480px) and (max-width:400px) {
+  .content {
+    margin: auto;
+  }
+}
+</style>
+<style>/* Copyright (c) 2012 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ *
+ * This is the stylesheet used for notifications in enterprise-enrolled devices.
+ */
+
+#enterprise-info {
+  background-color: rgb(250, 245, 202);
+  border: 2px solid rgb(250, 245, 202);
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin-bottom: -43px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 640px;
+  padding: 3px 8px 7px;
+}
+
+#enterprise-info[visible='false'] {
+  display: none;
+}
+
+#enterprise-info img {
+  height: 18px;
+  margin-inline-end: 4px;
+  position: relative;
+  top: 4px;
+  width: 18px;
+}
+
+@media (max-height:480px) and (max-width:400px) {
+  #enterprise-info {
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width:400px) {
+  #enterprise-info {
+    margin-top: -2em;
+  }
+}
+</style>
 </head>
-
-<body id="t" class="offline">
-    <div id="messageBox" class="sendmessage">
-         <h1 style="text-align: center;font-family: 'Open Sans', sans-serif;">🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌 </h1>
-
-    https://youtu.be/LH5ay10RTGY
-
+<body>
+<div id="enterprise-info" visible="false">
+  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0iIzYyNjI2MiI+PHBhdGggZD0iTTAgMGg0OHY0OEgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0yNCAxNFY2SDR2MzZoNDBWMTRIMjR6TTEyIDM4SDh2LTRoNHY0em0wLThIOHYtNGg0djR6bTAtOEg4di00aDR2NHptMC04SDh2LTRoNHY0em04IDI0aC00di00aDR2NHptMC04aC00di00aDR2NHptMC04aC00di00aDR2NHptMC04aC00di00aDR2NHptMjAgMjRIMjR2LTRoNHYtNGgtNHYtNGg0di00aC00di00aDE2djIwem0tNC0xNmgtNHY0aDR2LTR6bTAgOGgtNHY0aDR2LTR6Ii8+PC9zdmc+">
+  <span id="enterprise-info-message"></span>
+  <a id="enterprise-info-hint-link" href="">
+    
+  </a>
+</div>
+<div class="content">
+  <h1>You&#39;re browsing as a Guest</h1>
+  <p>
+    <span>Pages you view in this window won&#39;t appear in the browser history and they won&#39;t leave other traces, like cookies, on the computer after you sign out. Files you download and bookmarks you create won&#39;t be preserved.</span>
+    <a href="https://support.google.com/chromebook/?p=chromebook_guest">Learn more</a>
+  </p>
+</div>
+</body>
 </html>
